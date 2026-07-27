@@ -1,8 +1,28 @@
 aid: guildfi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/guildfi.png
 name: GuildFi
-description: 'GuildFi is a company surfaced as a portfolio company of pantera-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'GuildFi was a Web3 gaming platform and guild that aggregated blockchain
+  games, quests, achievements, and rewards into a single account layer, letting players
+  discover games and earn across the play-to-earn ecosystem (native token GF). It
+  was backed by Pantera Capital, Coinbase Ventures, Animoca Brands, and other crypto
+  investors. In 2024 GuildFi rebranded and consolidated into Zentry (zentry.com), a
+  self-described "Human-Agentic OS" spanning gaming (Radiant), a data layer (zData),
+  an agent layer (zAI), and the ZENT token. The original guildfi.com domain is now
+  defunct (expired TLS certificate, 404s) and GuildFi/Zentry publishes no public API,
+  developer portal, OpenAPI, SDKs, or agent surface as of this enrichment pass. This
+  record is a portfolio-lead stub retained for lineage; see x-successor for the live
+  entity.'
 url: https://raw.githubusercontent.com/api-evangelist/guildfi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +30,20 @@ x-backed-by:
 - pantera-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: rebranded
+x-successor: zentry
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Crypto
+- Web3
+- Gaming
+- Blockchain
+- Guild
+- Play-to-Earn
+- NFT
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +51,19 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/guildfi-domain-security.yml
 - type: Website
   url: https://guildfi.com/
+- type: Website
+  name: Successor (Zentry)
+  url: https://zentry.com/
+- type: Blog
+  url: https://medium.com/zentry
+- type: PrivacyPolicy
+  url: https://zentry.com/legal/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
